@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  AudioVisual
+
+  Created by winpower on 2020/8/18.
+  Copyright © 2020 yasuo. All rights reserved.
+*/
+
+/* 共同 */
+"Common.NoResults" = "没有结果";
+
+/* TakeAV */
+"TakeAV.SpeedSegments.Title" = "快速";
+"TakeAV.BalancedSegments.Title" = "平衡";
+"TakeAV.QualitySegments.Title" = "质量";
+
+
+/* Tabbar */
+"Home.Tabbar.Home.Title" = "首页";
+"Home.Tabbar.Circle.Title" = "圈子";
+"Home.Tabbar.ShortVideo.Title" = "WW";
+"Home.Tabbar.LiveBroadcast.Title" = "波波";
+"Home.Tabbar.Mine.Title" = "我的";
+
+/* 主页Home */
+

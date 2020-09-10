@@ -1,0 +1,5 @@
+*.xcworkspace
+*.lock
+*.a
+*.framework
+Pods
