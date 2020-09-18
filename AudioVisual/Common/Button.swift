@@ -20,26 +20,26 @@ class Button: UIButton {
         makeUI()
     }
     
-        func makeUI() {
-            themeService.rx
-                .bind({ UIImage(color: $0.secondary, size: CGSize(width: 1, height: 1)) }, to: rx.backgroundImage(for: .normal))
-                .bind({ UIImage(color: $0.secondary.withAlphaComponent(0.9), size: CGSize(width: 1, height: 1)) }, to: rx.backgroundImage(for: .selected))
-                .bind({ UIImage(color: $0.secondary.withAlphaComponent(0.6), size: CGSize(width: 1, height: 1)) }, to: rx.backgroundImage(for: .disabled))
-                .disposed(by: rx.disposeBag)
+    func makeUI() {
+        themeService.rx
+            .bind({ UIImage(color: $0.secondary, size: CGSize(width: 1, height: 1)) }, to: rx.backgroundImage(for: .normal))
+            .bind({ UIImage(color: $0.secondary.withAlphaComponent(0.9), size: CGSize(width: 1, height: 1)) }, to: rx.backgroundImage(for: .selected))
+            .bind({ UIImage(color: $0.secondary.withAlphaComponent(0.6), size: CGSize(width: 1, height: 1)) }, to: rx.backgroundImage(for: .disabled))
+            .disposed(by: rx.disposeBag)
 
-            layer.masksToBounds = true
-            titleLabel?.lineBreakMode = .byWordWrapping
-            cornerRadius = Configs.BaseDimensions.cornerRadius
-    //        font = font?.withSize(14)
+        layer.masksToBounds = true
+        titleLabel?.lineBreakMode = .byWordWrapping
+        cornerRadius = Configs.BaseDimensions.cornerRadius
+//        font = font?.withSize(14)
 
-            snp.makeConstraints { (make) in
-                make.height.equalTo(Configs.BaseDimensions.buttonHeight)
-            }
-
-            updateUI()
+        snp.makeConstraints { (make) in
+            make.height.equalTo(Configs.BaseDimensions.buttonHeight)
         }
 
-        func updateUI() {
-            setNeedsDisplay()
-        }
+        updateUI()
+    }
+
+    func updateUI() {
+        setNeedsDisplay()
+    }
 }
