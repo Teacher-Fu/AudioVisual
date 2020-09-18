@@ -84,6 +84,7 @@ target 'AudioVisual' do
   pod 'KeychainAccess', '~> 4.0'  # https://github.com/kishikawakatsumi/KeychainAccess
  
   #音视频
+  pod 'ijkplayer'
   pod 'GPUImage'
   #pod 'kxmovie'
 
