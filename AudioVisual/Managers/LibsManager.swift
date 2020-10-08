@@ -28,7 +28,6 @@ import Mixpanel
 import FirebaseCore
 import DropDown
 import Toast_Swift
-import GoogleMobileAds
 
 typealias DropDownView = DropDown
 
@@ -79,7 +78,7 @@ extension LibsManager{
         let libsManager = LibsManager.shared
         libsManager.setCocoaJournal()
         libsManager.setupAnalytics()
-        libsManager.setupAds()
+//        libsManager.setupAds()
         libsManager.setupTheme()
         libsManager.setupKafkaRefresh()
         libsManager.setupFLEX()
@@ -112,7 +111,7 @@ extension LibsManager{
     
     ///配置广告
     func setupAds() {
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+//        GADMobileAds.sharedInstance().start(completionHandler: nil)
     }
     
     ///配置主题

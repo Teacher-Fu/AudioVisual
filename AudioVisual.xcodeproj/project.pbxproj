@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1645975D78A7E9A31AF93DD4 /* Pods_AudioVisual_AudioVisualUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270A931184A663B5B500F5CB /* Pods_AudioVisual_AudioVisualUITests.framework */; };
+		BA58659925233538007EAD73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA58659825233538007EAD73 /* GoogleService-Info.plist */; };
 		C7BD19FA45FC2C2AB4D4F83D /* Pods_AudioVisualTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733DA343BE1C1B5915374F97 /* Pods_AudioVisualTests.framework */; };
 		CA20DC43251F3BF7D44DFEDE /* Pods_AudioVisual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58203233895DA389952DF66D /* Pods_AudioVisual.framework */; };
 		E11B293824D7FEDA007F8C16 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B293724D7FEDA007F8C16 /* Observable+Operators.swift */; };
@@ -101,6 +102,7 @@
 		6BFE522A87F930FD27D15CDB /* Pods-AudioVisual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisual.debug.xcconfig"; path = "Target Support Files/Pods-AudioVisual/Pods-AudioVisual.debug.xcconfig"; sourceTree = "<group>"; };
 		733DA343BE1C1B5915374F97 /* Pods_AudioVisualTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioVisualTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D71D111CC8F28A6D008D5 /* Pods-AudioVisual-AudioVisualUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisual-AudioVisualUITests.release.xcconfig"; path = "Target Support Files/Pods-AudioVisual-AudioVisualUITests/Pods-AudioVisual-AudioVisualUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA58659825233538007EAD73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D61431425B8E6796EB40E6A0 /* Pods-AudioVisual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisual.release.xcconfig"; path = "Target Support Files/Pods-AudioVisual/Pods-AudioVisual.release.xcconfig"; sourceTree = "<group>"; };
 		E11B293724D7FEDA007F8C16 /* Observable+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		E11B293924D80046007F8C16 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				E15094BE24CFB277003101BE /* Assets.xcassets */,
 				E15094C024CFB277003101BE /* LaunchScreen.storyboard */,
 				E15094C324CFB277003101BE /* Info.plist */,
+				BA58659825233538007EAD73 /* GoogleService-Info.plist */,
 				E11B293C24D805E1007F8C16 /* R.generated.swift */,
 				E14B8A4524EBAFCB00444079 /* Localizable.strings */,
 			);
@@ -658,6 +661,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E15094C224CFB277003101BE /* LaunchScreen.storyboard in Resources */,
+				BA58659925233538007EAD73 /* GoogleService-Info.plist in Resources */,
 				E14B8A4324EBAFCB00444079 /* Localizable.strings in Resources */,
 				E15094BF24CFB277003101BE /* Assets.xcassets in Resources */,
 			);

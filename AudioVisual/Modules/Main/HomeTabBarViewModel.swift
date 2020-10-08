@@ -46,7 +46,7 @@ class HomeTabBarViewModel: ViewModel, ViewModelType {
             let viewModel = HomeViewModel(provider: provider)
             return viewModel
         case .mine:
-            let user = User.currentUser()!
+//            let user = User.currentUser()!
             let viewModel = HomeViewModel(provider: provider)
             return viewModel
         }

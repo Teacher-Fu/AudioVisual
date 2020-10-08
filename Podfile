@@ -50,8 +50,8 @@ target 'AudioVisual' do
   pod 'Firebase/Crashlytics'
 
   # Ads
-  pod 'Firebase/AdMob'
-  pod 'Google-Mobile-Ads-SDK', '~> 7.0'
+  #pod 'Firebase/AdMob'
+  #pod 'Google-Mobile-Ads-SDK', '~> 7.0'
 
   # Networking
   pod 'Moya/RxSwift'  # https://github.com/Moya/Moya
@@ -84,7 +84,7 @@ target 'AudioVisual' do
   pod 'KeychainAccess', '~> 4.0'  # https://github.com/kishikawakatsumi/KeychainAccess
  
   #音视频
-  pod 'ijkplayer'
+  #pod 'ijkplayer'
   pod 'GPUImage'
   #pod 'kxmovie'
 

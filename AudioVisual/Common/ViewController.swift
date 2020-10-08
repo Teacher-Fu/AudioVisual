@@ -13,7 +13,6 @@ import DZNEmptyDataSet
 import NVActivityIndicatorView
 import Hero
 import Localize_Swift
-import GoogleMobileAds
 
 class ViewController: UIViewController, Navigatable, NVActivityIndicatorViewable {
 

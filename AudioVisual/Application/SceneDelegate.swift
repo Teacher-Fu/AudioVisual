@@ -19,6 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
+        if let windowScene = scene as? UIWindowScene {
+            window = UIWindow(windowScene: windowScene)
+            window?.backgroundColor = UIColor.white
+        }
+        
+        
         let libsManager = LibsManager.shared
         libsManager.setupLibs(with: window)
         
@@ -39,7 +45,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             libsManager.bannersEnabled.accept(false)
         }
         
-        Application.shared.presentInitialScreen(in: window!)
+        if let wind = window {
+            Application.shared.presentInitialScreen(in: wind)
+        }
+        
+        window?.makeKeyAndVisible()
         
     }
 

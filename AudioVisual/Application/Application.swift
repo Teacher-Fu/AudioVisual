@@ -24,7 +24,9 @@ final class Application: NSObject {
     }
     
     private func updateProvider() {
-
+        let  audioProvider = AudioVisualNetworking.audioVisualNetworking()
+        let restApi = RestApi(audioVisualProvider: audioProvider)
+        provider = restApi
     }
     
     func presentInitialScreen(in window: UIWindow?) {
