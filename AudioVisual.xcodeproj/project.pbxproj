@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1645975D78A7E9A31AF93DD4 /* Pods_AudioVisual_AudioVisualUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270A931184A663B5B500F5CB /* Pods_AudioVisual_AudioVisualUITests.framework */; };
 		BA58659925233538007EAD73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA58659825233538007EAD73 /* GoogleService-Info.plist */; };
+		BAB0D6A8252EF34100CE17A4 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB0D6A7252EF34000CE17A4 /* IJKMediaFramework.framework */; };
 		C7BD19FA45FC2C2AB4D4F83D /* Pods_AudioVisualTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733DA343BE1C1B5915374F97 /* Pods_AudioVisualTests.framework */; };
 		CA20DC43251F3BF7D44DFEDE /* Pods_AudioVisual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58203233895DA389952DF66D /* Pods_AudioVisual.framework */; };
 		E11B293824D7FEDA007F8C16 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B293724D7FEDA007F8C16 /* Observable+Operators.swift */; };
@@ -103,6 +104,7 @@
 		733DA343BE1C1B5915374F97 /* Pods_AudioVisualTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioVisualTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D71D111CC8F28A6D008D5 /* Pods-AudioVisual-AudioVisualUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisual-AudioVisualUITests.release.xcconfig"; path = "Target Support Files/Pods-AudioVisual-AudioVisualUITests/Pods-AudioVisual-AudioVisualUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA58659825233538007EAD73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAB0D6A7252EF34000CE17A4 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		D61431425B8E6796EB40E6A0 /* Pods-AudioVisual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisual.release.xcconfig"; path = "Target Support Files/Pods-AudioVisual/Pods-AudioVisual.release.xcconfig"; sourceTree = "<group>"; };
 		E11B293724D7FEDA007F8C16 /* Observable+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
 		E11B293924D80046007F8C16 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA20DC43251F3BF7D44DFEDE /* Pods_AudioVisual.framework in Frameworks */,
+				BAB0D6A8252EF34100CE17A4 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +236,14 @@
 			children = (
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		BAB0D6A6252EF2F600CE17A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAB0D6A7252EF34000CE17A4 /* IJKMediaFramework.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		E11B293524D7FE67007F8C16 /* Extension */ = {
@@ -507,6 +518,7 @@
 		E166905324D2A1F10091E61D /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				BAB0D6A6252EF2F600CE17A4 /* Frameworks */,
 				E166905424D2A1F10091E61D /* RxErrorTracker */,
 				E166905624D2A1F10091E61D /* RxActivityIndicator */,
 			);
@@ -1065,6 +1077,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VUVSMHWDF2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioVisual/Third\\ Party/Frameworks",
+				);
 				INFOPLIST_FILE = AudioVisual/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1084,6 +1100,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VUVSMHWDF2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioVisual/Third\\ Party/Frameworks",
+				);
 				INFOPLIST_FILE = AudioVisual/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
