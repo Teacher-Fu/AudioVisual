@@ -22,6 +22,8 @@ class HomeViewController: ViewController {
         let view = SegmentedControl()
         return view
     }()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

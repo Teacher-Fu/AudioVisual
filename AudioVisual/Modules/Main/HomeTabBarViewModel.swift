@@ -6,11 +6,11 @@
 //  Copyright © 2020 yasuo. All rights reserved.
 //
 
-@_exported import Foundation
-@_exported import RxCocoa
-@_exported import RxSwift
-@_exported import Kingfisher
-@_exported import Moya
+import Foundation
+import RxCocoa
+import RxSwift
+import Kingfisher
+import Moya
 
 class HomeTabBarViewModel: ViewModel, ViewModelType {
     override init(provider: NetApi) {
