@@ -104,6 +104,7 @@
 		733DA343BE1C1B5915374F97 /* Pods_AudioVisualTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioVisualTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		779D71D111CC8F28A6D008D5 /* Pods-AudioVisual-AudioVisualUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisual-AudioVisualUITests.release.xcconfig"; path = "Target Support Files/Pods-AudioVisual-AudioVisualUITests/Pods-AudioVisual-AudioVisualUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA58659825233538007EAD73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA75926D2555706B0044B5FC /* AudioVisual.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioVisual.entitlements; sourceTree = "<group>"; };
 		BAB0D6A7252EF34000CE17A4 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		D61431425B8E6796EB40E6A0 /* Pods-AudioVisual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioVisual.release.xcconfig"; path = "Target Support Files/Pods-AudioVisual/Pods-AudioVisual.release.xcconfig"; sourceTree = "<group>"; };
 		E11B293724D7FEDA007F8C16 /* Observable+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
@@ -236,6 +237,57 @@
 			children = (
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		BA75922A25553E300044B5FC /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		BA75922B25553E380044B5FC /* ShortVideo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShortVideo;
+			sourceTree = "<group>";
+		};
+		BA75922C25553E440044B5FC /* MemberCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MemberCenter;
+			sourceTree = "<group>";
+		};
+		BA75922D25553E5A0044B5FC /* LiveBroadcast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LiveBroadcast;
+			sourceTree = "<group>";
+		};
+		BA7592B92555755D0044B5FC /* LiveRoom */ = {
+			isa = PBXGroup;
+			children = (
+				BA7592BC255575790044B5FC /* ViewModel */,
+				BA7592BB255575720044B5FC /* View */,
+			);
+			path = LiveRoom;
+			sourceTree = "<group>";
+		};
+		BA7592BB255575720044B5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA7592BC255575790044B5FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		BAB0D6A6252EF2F600CE17A4 /* Frameworks */ = {
@@ -373,6 +425,7 @@
 		E15094B424CFB122003101BE /* AudioVisual */ = {
 			isa = PBXGroup;
 			children = (
+				BA75926D2555706B0044B5FC /* AudioVisual.entitlements */,
 				E1643F6024D151A90081456D /* Application */,
 				E14B8A3C24EBA73700444079 /* Resources */,
 				E11B293524D7FE67007F8C16 /* Extension */,
@@ -498,21 +551,26 @@
 		E166905124D2A1020091E61D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BA7592B92555755D0044B5FC /* LiveRoom */,
+				BA75922D25553E5A0044B5FC /* LiveBroadcast */,
+				BA75922C25553E440044B5FC /* MemberCenter */,
+				BA75922B25553E380044B5FC /* ShortVideo */,
+				BA75922A25553E300044B5FC /* Circle */,
 				E1557BE724ED138B0068482B /* Home */,
 				E14B8A4924EBBDFB00444079 /* User Detail */,
 				E14B8A0624EB819C00444079 /* Take */,
-				E166905224D2A1020091E61D /* Main */,
+				E166905224D2A1020091E61D /* Tabbar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		E166905224D2A1020091E61D /* Main */ = {
+		E166905224D2A1020091E61D /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
 				E14B8A4724EBBC9B00444079 /* HomeTabBarViewModel.swift */,
 				E1557BE524ED00440068482B /* HomeTabBarController.swift */,
 			);
-			path = Main;
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		E166905324D2A1F10091E61D /* Third Party */ = {
@@ -1005,7 +1063,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1060,7 +1118,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1075,8 +1133,9 @@
 			baseConfigurationReference = 6BFE522A87F930FD27D15CDB /* Pods-AudioVisual.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioVisual/AudioVisual.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VUVSMHWDF2;
+				DEVELOPMENT_TEAM = JS3K8WTP9T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AudioVisual/Third\\ Party/Frameworks",
@@ -1088,6 +1147,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuo.first.AudioVisual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1098,8 +1158,9 @@
 			baseConfigurationReference = D61431425B8E6796EB40E6A0 /* Pods-AudioVisual.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioVisual/AudioVisual.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VUVSMHWDF2;
+				DEVELOPMENT_TEAM = JS3K8WTP9T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AudioVisual/Third\\ Party/Frameworks",
@@ -1111,6 +1172,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasuo.first.AudioVisual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

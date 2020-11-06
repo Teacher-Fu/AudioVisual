@@ -12,9 +12,6 @@ class HomeViewController: ViewController {
     
     lazy var searchView: HomeSearchView = {
         let view = HomeSearchView()
-        view.snp.makeConstraints { (make) in
-            make.width.equalToSuperview().inset(self.inset)
-        }
         return view
     }()
     
@@ -31,7 +28,9 @@ class HomeViewController: ViewController {
     }
     
     override func makeUI() {
-        
+        searchView.snp.makeConstraints { (make) in
+            make.width.equalToSuperview().inset(self.inset)
+        }
     }
     
     override func bindViewModel() {

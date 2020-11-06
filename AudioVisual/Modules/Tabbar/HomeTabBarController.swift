@@ -17,7 +17,7 @@ enum HomeTabBarItem: Int{
     private func controller(with viewModel: ViewModel, navigator: Navigator) -> UIViewController {
         switch self {
         case .home:
-            let vc = UIViewController()
+            let vc = HomeViewController(viewModel: viewModel, navigator: navigator)
             return NavigationController(rootViewController: vc)
         case .circle:
             let vc = UIViewController()
