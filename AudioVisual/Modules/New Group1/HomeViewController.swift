@@ -14,13 +14,6 @@ class HomeViewController: ViewController {
         let view = HomeSearchView()
         return view
     }()
-    
-    lazy var segmentControl:SegmentedControl = {
-        let view = SegmentedControl()
-        return view
-    }()
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +23,9 @@ class HomeViewController: ViewController {
     override func makeUI() {
         searchView.snp.makeConstraints { (make) in
             make.width.equalToSuperview().inset(self.inset)
+            make.left.right.equalTo(0)
+            make.height.equalTo(120)
+            
         }
     }
     
